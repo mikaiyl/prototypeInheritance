@@ -19,17 +19,13 @@ Speaker.prototype = {
 
 function KeynoteSpeaker (givenName, surname, email, biography, websites, keynoteTopics, breakouts, isActive = true) {
     this.websites = websites;
-    this.websites = [];
-    this.keynoteTopics;
-    this.keynoteTopics = [];
+    this.keynoteTopics = keynoteTopics;
     this.breakouts = breakouts;
-    this.breakouts = [];
     Speaker.call(this, givenName, surname, email, biography, isActive = true);
 };
 
 function WorkshopSpeaker (givenName, surname, email, biography, workshopTopics, isActive = true) {
     this.workshopTopics = workshopTopics;
-    workshopTopics = [];
     Speaker.call(this, givenName, surname, email, biography, isActive = true);
 };
 
